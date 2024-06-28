@@ -1,0 +1,7 @@
+Variable,Value,notes
+n_years,75,number of years per iteration/episode
+n_iterations,1,number of simulations (or iterations)
+slr_scenario,Int,"noaa sea level rise (slr) scenario (Low, IntLow, Int, IntHigh, High) or ""train"""
+slr_ne,0.5,"noaa sea level rise (slr) non-exceedance prob (ne) (0.17, 0.5, 0.83) or ""train"""
+seed,1337,seed for simulations
+model_start_year,2025,model start year; used in slr exposure

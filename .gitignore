@@ -1,0 +1,12 @@
+**/.DS_Store
+*.shp
+*.shx
+*.shp
+*.qmd
+*.prj
+*.dbf
+*.cpg
+*.qix
+**/Output/
+**/output/
+**/slr-scenarios/
