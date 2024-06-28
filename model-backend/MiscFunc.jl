@@ -56,6 +56,7 @@ Directory structure as follows:
 function read_shpfile(path_to_input_dir, subdir)
     path_to_shpfile = joinpath(path_to_input_dir, subdir)
     files = readdir(path_to_shpfile)
+   
     file = String
     for f in files
         if occursin(".shp", f)
@@ -63,6 +64,7 @@ function read_shpfile(path_to_input_dir, subdir)
             break
         end
     end
+   
     gdf = GeoDataFrames.read(file)
     return gdf
 end

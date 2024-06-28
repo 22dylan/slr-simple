@@ -17,7 +17,7 @@ function prepare_parcel_df(path_to_input_dir; seed, cell_size::Int64=25, rotate:
     prcl_df = read_shpfile(path_to_input_dir, "Buildings_drs")
     prcl_df = dropmissing(prcl_df, :csv_sector)                                # removing buildings with missing sector information
     prcl_df = filter(row -> row.csv_sector in ["HS1I", "HS2I", "HS3I"], prcl_df) # only consider buildings that are a part of the housing stock (for now)
-    beach   = read_shpfile(path_to_input_dir, "Beach")                         # reading in the beach shapefile
+
     
     # for buildings
     # prcl_df = prcl_df[!, ["strctid", "struct_typ", "guid", "age_group", "lhsm_elev", "g_elev", "geometry"]]
