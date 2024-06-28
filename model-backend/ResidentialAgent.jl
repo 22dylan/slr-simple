@@ -327,7 +327,7 @@ function agent_step!(agent::ResidentialAgent, model::ABM)
     # test_two(agent,model)
     # test_one(agent,model)
     # # test_two(agent,model)
-    # utility_theory(agent,model)
+    utility_theory(agent,model)
     act!(agent, model, agent.action)    # agent performs action in agent.action
     return agent
 end
